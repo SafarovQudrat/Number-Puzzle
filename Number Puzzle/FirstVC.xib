@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstVC" customModule="Number_Puzzle" customModuleProvider="target">
+            <connections>
+                <outlet property="movescounter" destination="SQu-2a-tAb" id="Bmm-iX-Fjz"/>
+                <outlet property="restartbtn" destination="fw8-c6-UkZ" id="EWL-05-6oB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="btns" destination="72c-TM-1Qh" collectionClass="NSMutableArray" id="yEi-hB-tjl"/>
+                <outletCollection property="btns" destination="BHV-o4-qMT" collectionClass="NSMutableArray" id="WjR-Lt-21N"/>
+                <outletCollection property="btns" destination="SBG-VF-KOa" collectionClass="NSMutableArray" id="M7k-5N-Q6j"/>
+                <outletCollection property="btns" destination="EF0-4n-4ps" collectionClass="NSMutableArray" id="cd8-mU-EbF"/>
+                <outletCollection property="btns" destination="gMA-gC-ALm" collectionClass="NSMutableArray" id="2vX-l8-pRw"/>
+                <outletCollection property="btns" destination="ICc-XO-KSt" collectionClass="NSMutableArray" id="dDH-Vz-Lx6"/>
+                <outletCollection property="btns" destination="bvG-7L-vHJ" collectionClass="NSMutableArray" id="Ezz-Vc-VvE"/>
+                <outletCollection property="btns" destination="oEN-bd-MRW" collectionClass="NSMutableArray" id="TlF-0B-1Ej"/>
+                <outletCollection property="btns" destination="3JA-te-I8c" collectionClass="NSMutableArray" id="ZG4-IY-EUP"/>
+                <outletCollection property="btns" destination="ZRq-kh-gXW" collectionClass="NSMutableArray" id="4gu-kP-StY"/>
+                <outletCollection property="btns" destination="qku-ob-BUU" collectionClass="NSMutableArray" id="1u0-hQ-CLQ"/>
+                <outletCollection property="btns" destination="dOx-7l-3sF" collectionClass="NSMutableArray" id="4p9-zp-Z2b"/>
+                <outletCollection property="btns" destination="Tc1-mU-Q1P" collectionClass="NSMutableArray" id="NZk-QU-1r5"/>
+                <outletCollection property="btns" destination="nyh-fX-0Dk" collectionClass="NSMutableArray" id="b2Z-ae-iVL"/>
+                <outletCollection property="btns" destination="SEJ-pj-4gY" collectionClass="NSMutableArray" id="JLj-jw-TGu"/>
+                <outletCollection property="btns" destination="mNK-QH-6Aw" collectionClass="NSMutableArray" id="bni-4I-3jA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="taA-SY-bwN">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-WT-Gor">
+                    <rect key="frame" x="30" y="287" width="330" height="330"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iFE-RU-T6s">
+                            <rect key="frame" x="0.0" y="0.0" width="75" height="330"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72c-TM-1Qh">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="72c-TM-1Qh" secondAttribute="height" id="MnV-Yd-aSz"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="vn2-G1-aeC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMA-gC-ALm">
+                                    <rect key="frame" x="0.0" y="85" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="15">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="Vsn-l6-LDN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JA-te-I8c">
+                                    <rect key="frame" x="0.0" y="170" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="n7b-y3-mxH"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc1-mU-Q1P">
+                                    <rect key="frame" x="0.0" y="255" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="cSA-yB-3yQ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OVL-Dp-ubv">
+                            <rect key="frame" x="85" y="0.0" width="75" height="330"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHV-o4-qMT">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="you-nV-04b"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICc-XO-KSt">
+                                    <rect key="frame" x="0.0" y="85" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="Uyc-77-RBh"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRq-kh-gXW">
+                                    <rect key="frame" x="0.0" y="170" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="9e6-pV-VXD"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyh-fX-0Dk">
+                                    <rect key="frame" x="0.0" y="255" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="kv5-WR-ExF"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="afy-di-5bG">
+                            <rect key="frame" x="170" y="0.0" width="75" height="330"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBG-VF-KOa">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="pCp-2E-hmR"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvG-7L-vHJ">
+                                    <rect key="frame" x="0.0" y="85" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="Iqh-qH-DtF"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qku-ob-BUU">
+                                    <rect key="frame" x="0.0" y="170" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="aT0-Am-U3S"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEJ-pj-4gY">
+                                    <rect key="frame" x="0.0" y="255" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="tsa-xo-s3f"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hBM-ML-WKs">
+                            <rect key="frame" x="255" y="0.0" width="75" height="330"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EF0-4n-4ps">
+                                    <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="xDJ-7v-XuE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEN-bd-MRW">
+                                    <rect key="frame" x="0.0" y="85" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="aVf-31-4QZ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOx-7l-3sF">
+                                    <rect key="frame" x="0.0" y="170" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="exg-0Q-eWC"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNK-QH-6Aw">
+                                    <rect key="frame" x="0.0" y="255" width="75" height="75"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="1">
+                                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnsTapped:" destination="-1" eventType="touchUpInside" id="dRb-DX-NNX"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fw8-c6-UkZ">
+                    <rect key="frame" x="100" y="642" width="190" height="48"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="restart">
+                        <color key="titleColor" red="0.67058825489999996" green="0.62745100259999997" blue="0.56862747670000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="restartTapped:" destination="-1" eventType="touchUpInside" id="doY-j5-b1P"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-YP-Kjo">
+                    <rect key="frame" x="112.00000000000001" y="117" width="166.33333333333337" height="104"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Moves" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FcA-R9-kQx">
+                            <rect key="frame" x="0.0" y="0.0" width="166.33333333333334" height="36"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQu-2a-tAb">
+                            <rect key="frame" x="66.333333333333343" y="44" width="33.333333333333343" height="60"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="hbh-WT-Gor" secondAttribute="trailing" constant="30" id="1uL-yr-4Kh"/>
+                <constraint firstItem="taA-SY-bwN" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2iV-PE-jYQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="taA-SY-bwN" secondAttribute="trailing" id="Mjr-YW-IlH"/>
+                <constraint firstAttribute="bottom" secondItem="taA-SY-bwN" secondAttribute="bottom" id="S7f-dQ-pOG"/>
+                <constraint firstItem="fw8-c6-UkZ" firstAttribute="top" secondItem="hbh-WT-Gor" secondAttribute="bottom" constant="25" id="VcW-kL-v9W"/>
+                <constraint firstItem="fw8-c6-UkZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="W7J-sb-fnK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fw8-c6-UkZ" secondAttribute="trailing" constant="100" id="cda-5I-o5d"/>
+                <constraint firstItem="taA-SY-bwN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hlg-iI-3gW"/>
+                <constraint firstItem="nXF-YP-Kjo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lm4-S4-860"/>
+                <constraint firstItem="nXF-YP-Kjo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="70" id="qHs-Hg-xLh"/>
+                <constraint firstItem="hbh-WT-Gor" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="30" id="y8x-T5-749"/>
+                <constraint firstItem="hbh-WT-Gor" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="zhk-xe-LNj"/>
+            </constraints>
+            <point key="canvasLocation" x="27.69230769230769" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Image" width="168" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
